@@ -21,7 +21,7 @@
 
         <meta-data
             android:name="com.google.android.ar.API_KEY"
-            android:value="Paste your API Key here" />
+            android:value="AIzaSyCxSVGUjH_GyQy-eSbXhGk3DR-kdWgdOdI" />
 
         <meta-data android:name="com.google.ar.core" android:value="required" />
 

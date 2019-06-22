@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (cloudAnchor != null){
-                    snackbarHelper.showMessageWithDismiss(getParent(), "Please clear Anchor");
+                   // snackbarHelper.showMessageWithDismiss(getParent(), "Please clear Anchor");
                     return;
                 }
                 ResolveDialogFragment dialog = new ResolveDialogFragment();
@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
                     snackbarHelper.showMessage(this, "Now hosting anchor...");
 
 
-                    placeObject(fragment, cloudAnchor, Uri.parse("Fox.sfb"));
+                    placeObject(fragment, cloudAnchor, Uri.parse("tinker.sfb"));
 
                 }
         );
@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
         storageManager.getCloudAnchorID(shortCode,(cloudAnchorId) -> {
             Anchor resolvedAnchor = fragment.getArSceneView().getSession().resolveCloudAnchor(cloudAnchorId);
             setCloudAnchor(resolvedAnchor);
-            placeObject(fragment, cloudAnchor, Uri.parse("Fox.sfb"));
+            placeObject(fragment, cloudAnchor, Uri.parse("tinker.sfb"));
             snackbarHelper.showMessage(this, "Now Resolving Anchor...");
             appAnchorState = AppAnchorState.RESOLVING;
         });

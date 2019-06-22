@@ -4,7 +4,7 @@ android {
     compileSdkVersion 27
     defaultConfig {
         applicationId "com.hack.innovationstar.cloudanchors"
-        minSdkVersion 24
+        minSdkVersion 23
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
@@ -41,3 +41,32 @@ sceneform.asset('sampledata/ArcticFox_Posed.obj',
         'sampledata/ArcticFox_Posed.sfa',
         'src/main/assets/Fox')
 apply plugin: 'com.google.gms.google-services'
+
+
+sceneform.asset('sampledata/chairobj.obj',
+        'default',
+        'sampledata/chairobj.sfa',
+        'src/main/assets/chairobj')
+
+
+
+
+sceneform.asset('sampledata/ModifiedBed02.obj',
+        'default',
+        'sampledata/ModifiedBed02.sfa',
+        'src/main/assets/ModifiedBed02')
+
+sceneform.asset('sampledata/Chair.obj',
+        'default',
+        'sampledata/Chair.sfa',
+        'src/main/assets/Chair')
+
+sceneform.asset('sampledata/model.obj',
+        'default',
+        'sampledata/model.sfa',
+        'src/main/assets/model')
+
+sceneform.asset('sampledata/model.obj',
+        'default',
+        'sampledata/model.sfa',
+        'src/main/assets/model1')
