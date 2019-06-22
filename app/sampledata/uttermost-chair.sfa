@@ -1,0 +1,105 @@
+{
+   materials: [
+      {
+         name: "03___Default",
+         parameters: [
+            {
+               baseColor: null,
+            },
+            {
+               baseColorTint: [
+                  0.098039000000000001,
+                  0.098039000000000001,
+                  0.098039000000000001,
+                  1,
+               ],
+            },
+            {
+               metallic: 1,
+            },
+            {
+               roughness: 0.14280000000000001,
+            },
+            {
+               opacity: null,
+            },
+         ],
+         source: "build/sceneform_sdk/default_materials/obj_material.sfm",
+      },
+      {
+         name: "cloth_01",
+         parameters: [
+            {
+               baseColor: "fabric",
+            },
+            {
+               baseColorTint: [
+                  0.58823499999999995,
+                  0.58823499999999995,
+                  0.58823499999999995,
+                  1,
+               ],
+            },
+            {
+               metallic: 1,
+            },
+            {
+               roughness: 0.14280000000000001,
+            },
+            {
+               opacity: null,
+            },
+         ],
+         source: "build/sceneform_sdk/default_materials/obj_material.sfm",
+      },
+      {
+         name: "high_poly_wood",
+         parameters: [
+            {
+               baseColor: "wood-texture0038",
+            },
+            {
+               baseColorTint: [
+                  0.58823499999999995,
+                  0.58823499999999995,
+                  0.58823499999999995,
+                  1,
+               ],
+            },
+            {
+               metallic: 1,
+            },
+            {
+               roughness: 0.14280000000000001,
+            },
+            {
+               opacity: null,
+            },
+         ],
+         source: "build/sceneform_sdk/default_materials/obj_material.sfm",
+      },
+   ],
+   model: {
+      attributes: [
+         "Position",
+         "TexCoord",
+         "Orientation",
+      ],
+      collision: {},
+      file: "sampledata/uttermost-chair.obj",
+      name: "uttermost-chair",
+   },
+   samplers: [
+      {
+         file: "sampledata/wood-texture0038.png",
+         name: "wood-texture0038",
+         pipeline_name: "wood-texture0038.png",
+      },
+      {
+         file: "sampledata/fabric.png",
+         name: "fabric",
+         pipeline_name: "fabric.png",
+      },
+   ],
+   version: "0.51:1",
+}

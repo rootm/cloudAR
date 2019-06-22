@@ -56,10 +56,7 @@ sceneform.asset('sampledata/ModifiedBed02.obj',
         'sampledata/ModifiedBed02.sfa',
         'src/main/assets/ModifiedBed02')
 
-sceneform.asset('sampledata/Chair.obj',
-        'default',
-        'sampledata/Chair.sfa',
-        'src/main/assets/Chair')
+
 
 sceneform.asset('sampledata/model.obj',
         'default',
@@ -70,3 +67,8 @@ sceneform.asset('sampledata/model.obj',
         'default',
         'sampledata/model.sfa',
         'src/main/assets/model1')
+
+sceneform.asset('sampledata/uttermost-chair.obj',
+        'default',
+        'sampledata/uttermost-chair.sfa',
+        'src/main/assets/uttermost-chair')

@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
                 (HitResult hitResult, Plane plane, MotionEvent motionEvent) -> {
 
                     if (plane.getType() != Plane.Type.HORIZONTAL_UPWARD_FACING ||
-                            appAnchorState != AppAnchorState.NONE){
+                            appAnchorState == AppAnchorState.HOSTING){
                         return;
                     }
 
@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
                     snackbarHelper.showMessage(this, "Now hosting anchor...");
 
 
-                    placeObject(fragment, cloudAnchor, Uri.parse("tinker.sfb"));
+                    placeObject(fragment, cloudAnchor, Uri.parse("uttermost-chair.sfb"));
 
                 }
         );
@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
         storageManager.getCloudAnchorID(shortCode,(cloudAnchorId) -> {
             Anchor resolvedAnchor = fragment.getArSceneView().getSession().resolveCloudAnchor(cloudAnchorId);
             setCloudAnchor(resolvedAnchor);
-            placeObject(fragment, cloudAnchor, Uri.parse("tinker.sfb"));
+            placeObject(fragment, cloudAnchor, Uri.parse("uttermost-chair.sfb"));
             snackbarHelper.showMessage(this, "Now Resolving Anchor...");
             appAnchorState = AppAnchorState.RESOLVING;
         });
